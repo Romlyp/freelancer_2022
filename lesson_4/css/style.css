@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonds/lato/Lato-Black.woff2") format("woff2"), url("..fonds/lato/Lato-Black.woff") format("woff");
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonds/lato/Lato-Bold.woff") format("woff2"), url("..fonds/lato/Lato-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonds/lato/Lato-Regular.woff2") format("woff2"), url("..fonds/lato/Lato-Regular.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonds/larsseit/Larsseit-Regular.woff2") format("woff2"), url("..fonds/Larsseit-Regular.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: lato, sans-serif;
+    font-weight: 400;
+}
+
+.main-info {
+    font-family: 'Roboto', sans-serif;
+    color: red;
+    font-weight: 700;
+}
+
+.fact {
+    font-family: "Larsseit";
+    color: rgb(147, 86, 5);
+}
+
+h1,
+h2,
+h3 {
+    font-family: lato, sans-serif;
+    font-weight: 900;
+    color: rgb(213, 6, 6);
+}
+
+header ul {
+    color: rgb(78, 114, 23);
+}
+
+header ul li>a>span {
+    color: rgb(145, 14, 108);
+}
+
+div.text,
+.fact-text {
+    color: rebeccapurple;
+}
+
+div {
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    color: rgb(122, 77, 14);
+}
+
+div ul {
+    color: rgb(111, 111, 15);
+}
+
+#plot {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: purple;
+}
+
+#roles ul {
+    color: salmon;
+}
+
+#roles ul a {
+    color: rgb(13, 2, 1);
+}
+
+#music {
+    color: rgb(122, 77, 14);
+}
+
+#reaction>ul>li {
+    color: black;
+}
+
+#reaction>ul>li>ul>li {
+    font-family: "Lato";
+    font-weight: 900;
+    color: rosybrown;
+}
+
+footer div {
+    font-family: "Larsseit";
+    color: black;
+}
