@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,900;1,600&display=swap');
+
+@font-face {
+    font-family: "Chinese Rocks";
+    src: url("../fonds/ChineseRocks.woff2") format("woff2"), url("../fonds/ChineseRocks.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Noto Serif Display', serif;
+    color: rgb(95, 7, 7);
+    font-size: 18px;
+}
+
+.wrapper {
+    margin: 2%;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.header-img {
+    margin-bottom: 40px;
+}
+
+.header-img img {
+    width: 300px;
+}
+
+header ul>li {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+/* ---------------------------------- */
+
+.main-red-dead__img img {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.main h1 {
+    font-family: "Chinese Rocks";
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.main h1~p {
+    text-indent: 20px;
+}
+
+.main-red-dead>p {
+    line-height: 1.5;
+}
+
+.main-red-dead>p>span {
+    font-weight: 600;
+}
+
+.main-red-dead p {
+    margin-bottom: 20px;
+}
+
+.main-play {
+    font-style: italic;
+    color: rgba(26, 12, 12, 0.899);
+    padding: 30px 20px;
+    background-color: rgb(127, 10, 10);
+    text-indent: 20px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+#plot {
+    line-height: 1.5;
+    text-shadow: .5px .1px 1px #000;
+}
+
+.main-play>p>span {
+    font-weight: 900;
+    font-style: normal;
+}
+
+.main-play h2,
+#development h2 {
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 1px 2px 4px #000;
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.main-play h3 {
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.main-play h3~p {
+    color: rgb(237, 144, 4);
+    text-shadow: 2px 2px 2px #000;
+}
+
+#development {
+    padding: 30px 20px;
+    background-color: rgb(237, 144, 4);
+    word-spacing: 14px;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-indent: 20px;
+}
+
+#development>p>span {
+    font-weight: 900;
+}
+
+#development>p>.decoration {
+    text-decoration: line-through;
+}
+
+.online {
+    font-family: "Chinese Rocks";
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    text-shadow: 0px 1px 2px #000;
+}
+
+.online .online-img {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.online-img img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.online h2 {
+    font-size: 45px;
+    text-align: center;
+    color: red;
+    text-shadow: 3px 4px 2px #000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.online p {
+    text-indent: 25px;
+}
+
+/* ---------------------------------- */
+
+.footer-up {
+    padding: 30px;
+    background-color: rgb(127, 10, 10);
+    color: #fff;
+}
+
+#footer div {
+    margin-bottom: 40px;
+}
+
+#footer {
+    padding-top: 20px;
+    text-align: center;
+}
