@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+[class*="__container"] {
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #424551;
+}
+
+.wrapper {
+    margin: 0 4%;
+}
+
+.main__section {
+    padding: 20px 0 92px 0;
+}
+
+
+.main__title:not(:last-child) {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    margin-bottom: 92px;
+}
+
+.main__title_color {
+    color: #1E212C;
+}
+
+.main__img img {
+    max-width: 100%;
+}
+
+.main__img:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.main__text>*:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.main-bold-size {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.main__double-paragraph p:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.main__double-paragraph:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+.main-bold-size__blockquote {
+    margin-bottom: 48px;
+    padding-left: 56px;
+}
+
+.main-bold-size__blockquote::before {
+    content: "";
+    display: inline-block;
+    background: url('../img/icons/braces.svg') 0 0 no-repeat;
+    width: 28px;
+    height: 20px;
+    vertical-align: super;
+    margin-right: 28px;
+    margin-left: -56px;
+}
+
+.list {
+    padding-left: 32px;
+}
+
+.list li::before {
+    content: "";
+    display: inline-block;
+    background: url('../img/icons/check.svg') 0 0 / 16px 16px no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    margin-left: -32px;
+
+}
+
+.list_margin-s li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+/* ------- */
+
+.about {
+    padding: 50px 0;
+}
+
+.about__title:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.title {
+    color: #1E212C;
+}
+
+.title-small {
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.title-small_about:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.title-big {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.title-big_about:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.list_margin-xl li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.list_margin-xl:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 20px 32px;
+    letter-spacing: 0.5px;
+}
+
+.button:hover {
+    background: none;
+    outline: 2px solid #FF3F3A;
+    color: #FF3F3A;
+}
+
+
+.button_about:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.img-about img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.img-about {
+    text-align: center;
+}
+
+/* -------- */
+
+.courses:not(:last-child) {
+    margin-bottom: 180px;
+}
+
+.courses__title:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+
+.title-small_courses:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+
+.title-big_courses:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.cards {
+    font-size: 0;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #E5E8ED;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+}
+
+.cards__indent:not(:last-child) {
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.card__img img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card__img {
+    max-width: 214px;
+    max-height: 214px;
+}
+
+.card__img:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.skill {
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.skill_color_green:not(:last-child) {
+    background: #03CEA4;
+    margin-bottom: 21px;
+}
+
+.skill-expert {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.skill-expert_indent {
+    max-width: 214px;
+}
+
+.skill-expert_indent:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.price-name {
+    font-size: 18px;
+    color: #787A80;
+}
+
+.price-name_indent:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.color {
+    font-weight: 700;
+    color: #FF4242;
+}
+
+.skill_color_orange:not(:last-child) {
+    background: #F89828;
+    margin-bottom: 21px;
+}
+
+.skill_color_blue:not(:last-child) {
+    background: #5A87FC;
+    margin-bottom: 21px;
+}
+
+.skill_color_pink:not(:last-child) {
+    background: #F52F6E;
+    margin-bottom: 21px;
+}
+
+/* ------- */
+
+
+.benefits__title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.title-small_benefits:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+
+.title-big_benefits:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* ------- */
+
+.link-icons {
+    text-align: center;
+    font-weight: 700;
+}
+
+.link-icons a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.link-icons_indent:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.link-icons__decor {
+    display: inline-block;
+    padding: 10px 72px;
+}
+
+.link-icons__decor:hover {
+    padding: 10px 72px;
+    outline: 1px solid #FF3F3A;
+    border-radius: 4px;
+    color: #FF3F3A;
+}
+
+.link-icons__decor:not(:last-child) {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+.icon-star {
+    margin-right: 8px;
+}
+
+
+.icon-like {
+    margin-right: 8px;
+}
+
+
+.icon-layouts {
+    margin-right: 8px;
+}
+
+
+.icon-chat {
+    margin-right: 8px;
+}
+
+/* ------- */
+
+
+.practicing-tutors__title:not(:last-child) {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.practicing-tutors__text {
+    margin-bottom: 60px;
+}
+
+.practicing-tutors__img img {
+    max-width: 100%;
+}
+
+.practicing-tutors__img {
+    text-align: center;
+}
