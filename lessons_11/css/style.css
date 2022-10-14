@@ -1,0 +1,96 @@
+[class*="__container"] {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    position: relative;
+    height: 1400px;
+}
+
+.header {
+    background-color: red;
+    padding: 15px;
+    position: fixed;
+    min-width: 100%;
+    z-index: 100;
+    opacity: .7;
+}
+
+.header__text {
+    text-align: center;
+}
+
+.main {
+    background-color: green;
+    height: 100%;
+}
+
+.decor__indent {
+    padding-top: 300px;
+    position: relative;
+}
+
+.decor__citi {
+    position: relative;
+    z-index: 1;
+}
+
+.decor__citi img {
+    max-width: 100%;
+}
+
+.decor__road {
+    position: absolute;
+    left: 28%;
+    bottom: -8%;
+}
+
+.decor__road img {
+    min-width: 100%;
+}
+
+.decor__car {
+    position: absolute;
+    width: 390px;
+    bottom: 4%;
+    left: 42%;
+    z-index: 10;
+}
+
+.decor__car img {
+    min-width: 100%;
+    /* position: absolute; */
+}
+
+.wheels {
+    position: relative;
+}
+
+.wheels__left {
+    position: absolute;
+    width: 55px;
+    z-index: 3;
+    bottom: 19px;
+    /* left: 565px; */
+    left: 624px;
+}
+
+.wheels__right {
+    width: 55px;
+    position: absolute;
+    z-index: 3;
+    bottom: 19px;
+    /* left: 860px; */
+    left: 916px;
+}
+
+.decor__man {
+    width: 173px;
+    position: absolute;
+    bottom: 10px;
+    right: 356px;
+    z-index: 3;
+}
