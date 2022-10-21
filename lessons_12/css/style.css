@@ -1,0 +1,153 @@
+[class*="__container"] {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+
+/* ------ */
+
+.main {
+    padding: 100px 0;
+}
+
+.cube {
+    perspective-origin: center;
+    perspective: 400px;
+    position: relative;
+}
+
+.top {
+    perspective-origin: center;
+    perspective: 400px;
+}
+
+.top__cube {
+    width: 700px;
+    height: 300px;
+    background-color: #e8cfcd;
+    margin: 0 auto;
+    transform: rotateX(115deg);
+    transform: scale3d(30px, 30px, 4);
+}
+
+.cube__block-center {
+    width: 521px;
+    height: 340px;
+    background-color: rgb(100, 13, 107);
+    margin: 0 auto;
+    transform: translate(0px, -103px);
+    box-shadow: inset 1px 0px 15px 0px rgba(0, 0, 0, 0.92);
+}
+
+.cube__block-bottom {
+    width: 700px;
+    height: 300px;
+    background-color: #7000ff;
+    margin: -171px auto;
+    transform: translate(0px, -40px) rotateX(-115deg);
+
+}
+
+
+.cube__block-right {
+    width: 599px;
+    height: 720px;
+    background-color: #f3bcb8;
+    transform-origin: bottom;
+    position: absolute;
+    top: 54px;
+    right: 101px;
+    z-index: -1;
+    display: inline-block;
+}
+
+.cube__block-left {
+    width: 302px;
+    height: 723px;
+    background-color: #f3bcb8;
+    position: absolute;
+    top: 53px;
+    left: 137px;
+    z-index: -1;
+
+}
+
+
+
+.image {
+    position: absolute;
+    transform: translate(214px, -44px) rotateY(73deg);
+}
+
+.image img,
+.image-tv img,
+.image-painting img,
+.image-window img,
+.image-fon img,
+.image-tree img {
+    max-width: 100%;
+}
+
+.image-bed {
+    position: absolute;
+    transform: translate(477px, -311px);
+    z-index: 1;
+}
+
+.image-tv {
+    position: absolute;
+    max-width: 268px;
+    max-height: 200px;
+    top: 258px;
+    z-index: 0;
+    left: 592px;
+}
+
+.image-painting {
+    max-width: 200px;
+    min-width: 200px;
+    position: absolute;
+    right: 182px;
+    top: 260px;
+    transform: skewY(2deg) rotateY(78deg);
+}
+
+.image-window {
+    position: absolute;
+    top: 214px;
+    left: 196px;
+    max-width: 239px;
+    max-height: 280px;
+    transform: rotateY(100deg) skewY(355deg);
+}
+
+.image-fon {
+    max-width: 137px;
+    max-height: 42px;
+    position: absolute;
+    top: 296px;
+    left: 651px;
+    transform: scaleX(1.5);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.image-tree {
+    max-width: 137px;
+    max-height: 42px;
+    position: absolute;
+    top: 260px;
+    left: 856px;
+}
+
+
+.cube:hover .image-fon {
+    opacity: 1;
+    visibility: visible;
+}
