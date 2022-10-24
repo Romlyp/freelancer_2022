@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+
+[class*="__container"] {
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 1000px;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: 'Padauk', sans-serif;
+}
+
+.main {}
+
+.main__container {
+    position: relative;
+}
+
+.main__title {
+    padding-top: 300px;
+    font-size: 140px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 3px 4px 3px rgba(128, 0, 0, 0.9);
+    animation: title 2s ease forwards, title_2 2s ease forwards 3s;
+    transform: translate(0%, 80%);
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.main__img-bg {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.main__img-bg::before {
+    content: "";
+    display: inline-block;
+    background-color: #95711233;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main__img-bg img {
+    max-width: 100%;
+}
+
+.main__img-logo {
+    max-width: 180px;
+    margin: 0 auto;
+    animation: logo 2s forwards, logo_2 2s forwards 3.5s;
+    position: relative;
+}
+
+.main__img-logo::before {
+    content: "";
+    display: inline-block;
+    top: 0;
+    left: 50%;
+    background-color: red;
+    width: 3px;
+    position: absolute;
+    transform: translate(0, -92%);
+    height: 500%;
+    z-index: -1;
+
+}
+
+.main__img-spider img {
+    max-width: 100%;
+}
+
+.main__img-spider {
+    max-width: 500px;
+    animation: spider 4s forwards 3s;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.main__img-logo img {
+    max-width: 100%;
+}
+
+.main__img-spider-2 img {
+    max-width: 100%;
+}
+
+/* 1) ЗВЕРНІТЬ БУДЬ ЛАСКА УВАГУ, НА ЦЬОМУ ЕЛЕМЕНТІ Є ПОМИЛКА (картинка інколи зміщується вліво, чому це відбувається?) .main__img-spider-2 */
+.main__img-spider-2 {
+    max-width: 400px;
+    position: absolute;
+    transform: translate(230%, -800%) rotate(345deg);
+    animation: spider_2 6s forwards cubic-bezier(0.88, 0.17, 0.08, 0.9) 4s;
+}
+
+.main__img-spider-2::before {
+    content: "";
+    display: inline-block;
+    left: 73%;
+    bottom: 173px;
+    height: 400%;
+    width: 3px;
+    background-color: #bda3a3;
+    position: absolute;
+    transform: rotate(13deg);
+}
+
+.main__web {
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    border-radius: 13px;
+    background-color: #e7e7e7;
+    opacity: 0;
+    transform: translate(1044px, -316px) rotate(45deg);
+    animation: web 1s linear 7s;
+}
+
+.main__web-img {
+    width: 308px;
+    height: 400px;
+    animation: web_2 1s forwards 7.3s;
+}
+
+.main__web-img img {
+    max-width: 100%;
+}
+
+
+/* 2) Не вдається закріпити елемент в верхній точці, хочу, щоб елемент рухався від верхньої точки на павутині тобто(.main__img-spider-3::before ) */
+.main__img-spider-3 {
+    max-width: 394px;
+    transform-origin: 134% -77%;
+    animation: spider_3 7s ease infinite 9s;
+    transform: translate(82px, -1232px) rotate(90deg);
+}
+
+.main__img-spider-3::before {
+    content: "";
+    display: inline-block;
+    left: 47%;
+    bottom: 64%;
+    height: 200%;
+    width: 3px;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%, 0px);
+}
+
+.main__img-spider-3 img {
+    max-width: 100%;
+}
+
+
+@keyframes title {
+    0% {}
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes title_2 {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    50% {
+
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes logo {
+    0% {
+        transform: translate(0, -350%);
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}
+
+@keyframes logo_2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+
+        opacity: 0;
+    }
+}
+
+@keyframes spider {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        top: 70%;
+        left: -70%;
+        opacity: 0;
+    }
+}
+
+@keyframes spider_2 {
+    0% {
+        transform: translate(230%, -800%) rotate(345deg);
+    }
+
+    50% {
+        transform: translate(230%, -224%) rotate(345deg);
+    }
+
+    100% {
+        transform: translate(230%, -800%) rotate(345deg);
+    }
+
+}
+
+
+@keyframes web {
+    0% {
+        opacity: 1;
+        transform: translate(1044px, -316px) rotate(45deg);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(916px, -187px);
+    }
+}
+
+@keyframes web_2 {
+    0% {
+        opacity: 0;
+        transform: translate(664px, -419px) rotate(121deg);
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(664px, -319px) rotate(121deg);
+    }
+}
+
+@keyframes spider_3 {
+    0% {
+        transform: translate(-82px, -1232px) rotate(90deg);
+    }
+
+    50% {
+        transform: translate(-82px, -1232px) rotate(-60deg);
+    }
+
+    100% {
+        transform: translate(-82px, -1232px) rotate(90deg);
+    }
+}
