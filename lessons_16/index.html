@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__flex">
+                    <div class="main__img">
+                        <img src="img/illustration.svg" alt="Woman">
+                    </div>
+                    <div class="main__block-form">
+                        <div class="main__heading heading">
+                            <div class="heading__subtitle">Any questions?</div>
+                            <div class="heading__title">Drop us a line</div>
+                        </div>
+                        <form class="main__form form" method="post" action="https://jsonplaceholder.typicode.com/posts">
+                            <div class="form__items">
+                                <div class="form-block">
+                                    <label for="first-name" class="form-block__label label">First Name*</label>
+                                    <input id="first-name" autocomplete="off" type="text" name="first-name" required
+                                        placeholder="Your first name" class="form-block__input input">
+                                </div>
+                                <div class="form-block">
+                                    <label for="last-name" class="form-block__label label">Last Name*</label>
+                                    <input id="last-name" autocomplete="off" type="text" required name="last-name"
+                                        placeholder="Your last name" class="form-block__input input">
+                                </div>
+                                <div class="form-block">
+                                    <label for="mail" class="form-block__label label">Email*</label>
+                                    <input id="mail" autocomplete="off" type="text" required name="mail"
+                                        placeholder="Your working email" class="form-block__input input">
+                                </div>
+                                <div class="form-block">
+                                    <label for="phone" class="form-block__label label">Phone</label>
+                                    <input id="phone" autocomplete="off" type="text" name="tel"
+                                        placeholder="Your phone number" class="form-block__input input">
+                                </div>
+                                <div class="form-block form-block--flex">
+                                    <label for="message" class="form-block__label label">Message*</label>
+                                    <div class="textarea">
+                                        <textarea name="message" id="message" class="message" placeholder="Your message"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__agree">
+                                <div class="form__checkbox checkbox">
+                                    <input id="checkbox" class="checkbox__input" required type="checkbox" value="yes"
+                                        name="agree" placeholder="" class="input">
+                                    <label class="label__checkbox" for="checkbox">I agree to receive communications from
+                                        Createx Online School</label>
+                                </div>
+                                <button type="submit" class="form__btn btn btn--indent"><span>Send
+                                        message</span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+</body>
+
+</html>
