@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #424551;
+    line-height: 1.5;
+}
+
+[class*="__container"] {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+label {
+    display: inline-block;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* main */
+.main {}
+
+.main__container {
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+
+.main__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main__img {
+    flex: 0 1 435px;
+    padding-right: 30px;
+    align-self: center;
+}
+
+.main__img img {
+    max-width: 100%;
+}
+
+.main__block-form {
+    max-width: 705px;
+}
+
+.main__heading:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.main__form {}
+
+.form {}
+
+.form__items {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 24px;
+    margin-bottom: 48px;
+}
+
+
+.form-block {
+    flex: 0 1 48.29%;
+}
+
+.form-block__label {}
+
+.label:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.form-block__input {}
+
+.input {
+    height: 52px;
+    padding: 13px 16px;
+    flex-shrink: 1;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+}
+
+.form-block--flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea {
+    width: 207%;
+    min-height: 128px;
+}
+
+.message {
+    width: 100%;
+    height: 100%;
+    padding: 13px 16px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    resize: none;
+    max-height: 128px;
+}
+
+.form__agree {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+
+.form__checkbox {
+    flex: 0 1 50%;
+}
+
+.checkbox {
+    position: relative;
+}
+
+.form__btn {
+    flex: 0 1 50%;
+}
+
+.checkbox__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkbox__input:checked+.label__checkbox::before {
+    background: #FF3F3A url('../img/check.svg') center / 70% no-repeat;
+}
+
+.label__checkbox {
+    cursor: pointer;
+    display: flex;
+    gap: 12px;
+}
+
+.label__checkbox::before {
+    content: "";
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FF3F3A;
+    border-radius: 3px;
+    align-self: flex-start;
+    background-color: #FF3F3A;
+    transform: translate(0px, 5px);
+}
+
+.btn {}
+
+
+.btn--indent {
+    padding-left: 117px;
+    padding-right: 117px;
+}
